@@ -1,0 +1,27 @@
+.env
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+.idea/
+.vscode/
+data/*.db*
+data/.gitpilot-master-key
+*.egg-info/
+.claude/
+/Token/
+
+# Locally mapped code workspaces (GITPILOT_CODE_ROOTS) are separate
+# repositories mounted for runtime code operations, not GitPilot source.
+/atlas-library-ai/
+
+# Internal business/planning docs -- not for the public repo.
+/DOCS IDEA/
+docs/*.docx
+docs/*Playbook*
+docs/*Roadmap*
+docs/*Key Findings*
+docs/GitPilot_Claude_Handoff_Key_Findings.pdf
+docs/_qa_product_deployment/

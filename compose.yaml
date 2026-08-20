@@ -1,0 +1,19 @@
+services:
+  gitpilot:
+    build: .
+    ports:
+      - "127.0.0.1:8765:8765"
+    env_file:
+      - .env
+    environment:
+      GITPILOT_CODE_ROOTS: atlas-library-ai=/workspaces/atlas-library-ai
+      GITPILOT_MEMORY_DB: /app/data/gitpilot.db
+    volumes:
+      - ./atlas-library-ai:/workspaces/atlas-library-ai
+      - ./data:/app/data
+    restart: unless-stopped
+    read_only: true
+    security_opt:
+      - no-new-privileges:true
+    tmpfs:
+      - /tmp

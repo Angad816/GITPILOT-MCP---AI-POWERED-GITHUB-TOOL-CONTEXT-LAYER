@@ -1,0 +1,12 @@
+.git
+.github
+.env
+.venv
+__pycache__
+.pytest_cache
+atlas-library-ai
+DOCS IDEA
+tests
+test_*.py
+*.pptx
+*.pdf
